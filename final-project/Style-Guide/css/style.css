@@ -1,0 +1,186 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+header{
+	background: rgb(38, 70, 83);
+	/*bfbf82*/
+	padding: 5px;
+}
+
+header h2{
+	color: rgb(191, 191, 130);
+}
+
+
+body {
+	background-color: rgb(38, 70, 83);
+	color: rgb(82, 170, 170);
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+	display: flex;
+	
+}
+
+section{
+	text-align: center;
+	border: 1px black solid;
+}
+
+
+#Pop{
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+#Mon{
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+ 	font-style: normal;
+}
+
+
+p{
+	
+	
+	text-align: center;
+}
+
+figure img{
+	width: 100%;
+}
+
+
+
+h1,h2{
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+} 
+
+figcaption, footer{
+	font-size: 0.75em;	
+	text-align: center;
+	
+}
+
+footer em, figcaption em {
+	background-color: rgb(237, 237, 237);
+	padding: 7px;
+	border-radius: 5px;
+	
+}
+
+
+
+#container {
+	padding:20px;
+	max-width: 80%;
+	margin:auto;
+    background-color: rgb(237, 237, 237);	
+	
+}
+
+a {
+	color: rgb(191, 191, 130);
+	
+	text-decoration: none;
+	font-size: 1.25em;
+	display: inline-block;
+	border-left: 2px rgb(191, 191, 130) solid ;
+	border-right: 2px rgb(191, 191, 130) solid ;
+	padding: 5px;
+	
+	max-height: fit-content;
+	align-self: center;
+}
+
+a:hover {
+/*	color:rgb(82, 170, 170);
+	border-left: 2px rgb(82, 170, 170) solid;
+	border-right: 2px rgb(82, 170, 170) solid;
+	padding-left: 10px;
+	padding-right: 10px;
+	opacity: 65% ; */
+	animation: vanish .5s ;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+@keyframes vanish {
+	0%{ color:rgb(82, 170, 170)}	
+
+	100%{ color:rgb(82, 170, 170);
+		border-left: 2px rgb(82, 170, 170) solid;
+		border-right: 2px rgb(82, 170, 170) solid;
+		padding-left: 10px;
+		padding-right: 10px;
+		opacity: 65% ;
+		
+	}
+}
+
+
+@media all and (min-width: 1024px) {
+	
+	#center img{
+		width: 500px;
+		height: 500px;
+	}
+	section{
+		flex-basis: 33%;
+	}
+
+} /* closes 1024px+ */
+
+
+figure.responsive {
+    position: relative;
+    padding-bottom: 56.25%;  /* 16:9 */
+    height: 0px;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+figure.responsive iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.poppins-bold {
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+  }
+  
+  .poppins-regular {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+  }
+
+  .poppins-regular {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+  }
+.montserrat{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

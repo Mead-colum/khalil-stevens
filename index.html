@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	
+	<title>Index</title>
+	
+	<link rel="stylesheet" href="css/style.css">	
+
+</head>
+
+
+<body>
+	
+		<div id="container">
+			
+			<header id="test">
+			<section>
+				<h1> Khalil Stevens </h1>
+				<h2> WebDev Portfolio</h2>
+				<button onclick = "Bojangles()">Assitance needed! Click Me!</button>
+			</section>			
+			<section id="clock">	
+				Stuff	
+			</section>
+			
+			</header>
+			
+			<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="bio.html">About Me</a></li>
+				<li><a href="assignments.html">Assignments</a></li>
+				<li><a href="final-project.html">Final Project</a></li>
+			</ul>
+			</nav>
+
+			<main>
+			<figure>
+				<img src="img/OceanView.jpg" alt="View of the ocean from a boat">
+				<figcaption><em>Taken by khalil stevens</em></figcaption>
+			</figure>
+			<section id="thoughts">
+			<p id="greet">Hey</p> 
+			<figure id="rline">
+				<img src="./img/Ring.gif" alt="">
+				<img src="./img/Ring.gif" alt="">
+				<img src="./img/Ring.gif" alt="">
+				<img src="./img/Ring.gif" alt="">
+			</figure>
+			<p>I like the script stuff, I however do not like being broke, and final papers, and snoring roomates, and the heat, and nursing homes, and working at nursing homes, and work in general, and a lot of other stuff actually.</p>
+			</section>
+			
+			</main>
+			<footer><em>&#169; Khalil Stevens <span id="year">2000</span></em></footer>
+		</div><!-- close "container" -->
+	
+	<!--Script-->  
+	<script>
+
+		let message = "\n\ntest";				
+		let time = new Date();
+		//this a function wrapper? it allows for multiple functions to be called at once via onload 
+		window.onload = function(){
+			//important so that there's (barely)no delay for showing changes
+			ShowClock();
+			GetSetTime();
+			//this will call show clock every second refreshing the snapshot			
+			setInterval(ShowClock, 1000); 
+			setInterval(GetSetTime,1000);
+		} 	
+		
+		
+	
+	function ShowClock() 
+	{
+			//so it'll just appear after being invisible
+			
+			let time = new Date(); //date is snapshot of time, 
+			document.getElementById("clock").innerHTML = time + " Website Last Updated 4 - 8 - 25 Check da Bio";
+			//I think this's almost like a reset timer
+			
+	}									
+				
+	function GetSetTime() {					
+			
+			if (new Date().getHours() <= 12) {
+			message = " Good Morning!";	
+			}
+			if (new Date().getHours() >= 12) {
+			message = " Good Afternoon!";
+			}
+			if (new Date().getHours() >= 18) {
+			message = " Good Evening!";
+			}
+			if (new Date().getHours() >= 21) {
+			message = " Good Night!";
+			}			
+			document.getElementById("year").innerHTML = new Date().getFullYear();
+			document.getElementById("greet").innerHTML = message;
+
+		} //SET TIME		
+			//document.write("Hello");
+	function Bojangles()
+	{
+		alert("!!!IF YOU SEE THIS!!!\n\nEMAIL ME \nstevens04@colum.edu\nA PICTURE OF YOUR DOG\nAND A QUIRK OF THEIRS IF YOU FEEL SO INCLINED")
+	}	//Closed function Bojanles
+
+	</script>
+	<!--Script--> 
+
+</body>
+	
+</html> 
