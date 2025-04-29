@@ -154,7 +154,6 @@ p{
 #workContent section{
 	margin: 5px;
 	background-color: rgb(12, 80, 59);
-	border: 3px white solid;
 	border-radius: 5px;
 }
 #workContent img{
@@ -186,9 +185,11 @@ p{
 	height: 100%;
 }
 
-
-
-
+#Rightcolumn p{
+	background-color: rgba(88, 52, 52, 0.562);
+	border: 5px black solid;
+	border-radius: 5px;
+}
 
 
 @media all and (min-width: 1024px) {
@@ -214,22 +215,18 @@ nav a, button{
 	flex-basis: 65%;	
 	align-items: flex-start;
 }
-#AdventGameSect{
+#Rightcolumn section{
 	display:flex;
 }
-#AdventGameSect img{
-	flex-basis: 50%;
-	
+#Rightcolumn img{
+	flex-basis: 50%;	
 	max-height: 300px;
 
 }
-#AdventGameSect p{
+#Rightcolumn p{
 	flex-basis: 50%;
 	max-height: fit-content;
-	border: 5px black solid;
-	background-color: aquamarine;
 }
-
 
 } /* closes 1024px+ */
 
