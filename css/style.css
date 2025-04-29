@@ -81,6 +81,8 @@ figure img{
 	width: 100%;
 }
 
+
+
 #collage{
 	display: flex;
 	flex-direction: column;
@@ -149,6 +151,16 @@ p{
 	background-color: rgb(27, 54, 45);	
 }
 
+#workContent section{
+	margin: 5px;
+	background-color: rgb(12, 80, 59);
+	border: 3px white solid;
+	border-radius: 5px;
+}
+#workContent img{
+	border-radius: 0%;
+	max-height: 300px;
+}
 
 #thoughts{
 	background-color: rgba(88, 52, 52, 0.562);
@@ -174,13 +186,7 @@ p{
 	height: 100%;
 }
 
-.growth{
 
-}
-@keyframes grow{
-	0%{};
-	100%{height: 100%;};
-}
 
 
 
@@ -193,8 +199,36 @@ nav a, button{
 #rline{
 	justify-content: space-around;
 }
+#workContent{
+	display: flex;
+	
+}
+#workContent figure{
+	margin:5px;
+}
+#Leftcolumn{
+	flex-basis: 35%;
+}
+#Rightcolumn{
+	padding: 5px;
+	flex-basis: 65%;	
+	align-items: flex-start;
+}
+#AdventGameSect{
+	display:flex;
+}
+#AdventGameSect img{
+	flex-basis: 50%;
+	
+	max-height: 300px;
 
-
+}
+#AdventGameSect p{
+	flex-basis: 50%;
+	max-height: fit-content;
+	border: 5px black solid;
+	background-color: aquamarine;
+}
 
 
 } /* closes 1024px+ */
