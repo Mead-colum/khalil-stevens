@@ -73,12 +73,28 @@ nav a:hover, button:hover {
 	box-shadow: 1px 1px white;
 }
 
+figure{
+	max-width: 600px;
+	margin: auto;
+}
+
 figure img{
-	
+	margin: auto;
 	border-radius: 10%;
-	max-height: 100%;
-	height: 600px;
+	height: 100%;
 	width: 100%;
+	max-height: 500px;
+	/* max-width: 400px; */
+	
+}
+
+#Rightcolumn figure{
+	
+}
+
+#scrollingPic{
+	padding: 5px;
+	max-width: 55%;
 }
 
 
@@ -146,19 +162,25 @@ p{
 #container {
 	
 	padding:20px;	
-	max-width: 60%;
+	max-width: 80%;
 	margin:auto;
 	background-color: rgb(27, 54, 45);	
 }
 
 #workContent section{
 	margin: 5px;
-	background-color: rgb(12, 80, 59);
+	padding: 5px;
 	border-radius: 5px;
 }
 #workContent img{
 	border-radius: 0%;
 	max-height: 300px;
+}
+
+#Rightcolumn{
+	background-color: rgb(12, 80, 59);
+
+	border-radius: 5px;
 }
 
 #thoughts{
@@ -202,23 +224,32 @@ nav a, button{
 }
 #workContent{
 	display: flex;
-	
+	justify-content: space-evenly;
+
 }
 #workContent figure{
 	margin:5px;
 }
 #Leftcolumn{
-	flex-basis: 35%;
+	flex-basis: 20%;
 }
+
+#scrollingPic{
+	position: sticky;
+	max-width: 100%;
+	top:0px;
+}
+
 #Rightcolumn{
-	padding: 5px;
+	padding: 10px;
 	flex-basis: 65%;	
 	align-items: flex-start;
 }
 #Rightcolumn section{
 	display:flex;
 }
-#Rightcolumn img{
+
+#Rightcolumn figure{
 	flex-basis: 50%;	
 	max-height: 300px;
 
