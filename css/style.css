@@ -178,9 +178,9 @@ p{
 
 	border-radius: 5px;
 }
-#Rightcolumn img:focus{
-	position: absolute;
-	transform: (4,4);
+#Rightcolumn img:hover{
+	transform:scale(1.4);
+	cursor:alias;
 	max-width: 500px;
 	max-height: 300px;
 }
