@@ -88,10 +88,6 @@ figure img{
 	
 }
 
-#Rightcolumn figure{
-	
-}
-
 #scrollingPic{
 	padding: 5px;
 	max-width: 55%;
@@ -181,6 +177,12 @@ p{
 	background-color: rgb(12, 80, 59);
 
 	border-radius: 5px;
+}
+#Rightcolumn img:focus{
+	position: absolute;
+	transform: (4,4);
+	max-width: 500px;
+	max-height: 300px;
 }
 
 #thoughts{
